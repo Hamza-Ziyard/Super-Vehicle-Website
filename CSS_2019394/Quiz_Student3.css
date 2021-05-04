@@ -1,0 +1,388 @@
+
+
+body{
+	background-image: url('../Images_2019394/b14a.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: relative; 
+	background-size: 100% 100%;
+	margin: 0px;
+}
+
+#content{ 				/*whole html body*/
+	margin-top: 65px;
+}
+
+#img{					/*logo img*/
+    height: 85px;
+	width: 85px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 1000px;
+	padding: 5px;
+	border: solid 2px goldenrod;
+}
+
+#logo{ 					/*logo div*/
+    text-align: center;
+	float: left;
+	position: fixed;
+	top: 10px;
+	margin-left: 10px;
+}    
+
+h1{ 					/*QUIZ heading*/
+	font-family: 'Tinos', serif;
+	text-align: center;
+	font-weight: lighter;
+	text-transform: uppercase;
+	font-size: 55px;
+	padding: 15px 0px;
+	color: wheat;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	width: 51.5%;
+	position: relative;
+	margin: 5.5% auto 0.5% auto;
+}	
+
+h2{ 					/*Instructions heading*/
+	text-align: center;
+	margin: 0px auto 0px -10px;
+	color: white;
+	letter-spacing: 5px;
+	line-height: 30px;
+	text-shadow: 3px 1px darkslategray;
+	background-color: #999999;
+	border: #000000;
+}
+
+#rules{ 					/*rules div*/
+	background-color: white;
+	width: 51%;
+    margin: 0 auto -10px auto;
+	padding: 0 0 10px 10px;
+	border-radius: 5px;
+	border: solid black 1px;
+	font-family: 'Saira', sans-serif;
+	line-height: 20px;
+}
+
+#green1,#green2,#red1,#red2{ /*color boxes*/
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin: auto;
+	margin-right: 10px;
+	border: solid black 1px;
+}
+
+#green1{					/*box inside the rules*/
+	background-color: #ddffab;   
+}   
+#red1{						/*box inside the rules*/   
+	background-color: #ff726f;   
+}   
+#green2{					/*box inside the rules*/
+	background-color: lightgreen;   
+}
+#red2{						/*box inside the rules*/
+	background-color: #ff0000;
+}
+
+#Start,#done,#again{ 		/*3 btns*/
+	padding: 10px 20px;
+    text-align: center;
+	font-size: 20px;
+	font-family: 'Saira', sans-serif;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	color: black; 
+	border-radius: 5px;
+	border: #000000 1px solid;
+	background-image: linear-gradient(to bottom , grey, lightgrey, white, lightgrey, grey);
+}
+
+#Start:hover,#done:hover,#again:hover {		/*Hover for the 3 btns*/
+	background-image: linear-gradient(to bottom , grey, white, white, white, white, grey);
+	color: #1b0061;
+	border-radius: 5px;
+	transform : scale(0.9);
+}
+
+#Start{ 					/*start btn*/
+	margin: 25px 0px -20px 0;
+}
+
+#done{ 						/*submit btn*/
+	float: right;
+	margin-right: 45px;
+}
+
+#again{ 					/*again btn*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+#quiz{					/*Form created with the questions*/
+	margin-top: -2%;
+}
+
+
+#showtimer{ 			/*timer div*/
+	position: sticky;
+	margin-top: 15px;
+	top: 70px;
+	float: right;
+	font-weight: bolder;
+	font-size: 21px;
+	padding: 15px;
+	background-color: #adff2f;   /*#adff2f*/
+	border-top-left-radius:10px;
+	border-bottom-left-radius: 10px;
+}
+
+  
+.Qorder{ 				/*questions div*/
+	border: solid black 1px;
+	border-radius: 10px;
+	padding: 15px;
+	padding-bottom: 35px;
+	margin: 5px auto 5px auto;
+	width: 70%;
+	font-weight: bold;
+	font-size: 22px;
+	font-family: 'Saira', sans-serif;
+	background-image: linear-gradient(to right, grey , lightgrey , lightgrey , grey);
+}
+
+#Question{ 				/*radio btns div*/
+	font-size: 18px;
+	font-weight: normal;
+	margin-left: 30px;
+	margin-right: 30px;
+	border-radius: 10px;
+	background-image: linear-gradient(to right, lightgrey , white , lightgrey );
+	font-family: 'Saira', sans-serif;
+
+}
+label{ 					/*label for radio btns*/
+	margin: 15px;
+}
+
+label:hover{			/*Hover effect for the radio btns in quiz*/
+	color: royalblue;
+	background-color: #e6f8f9;
+	border-radius: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+
+}
+#report_head{ 			/*print heading for report*/
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 40px;
+	text-shadow: 2px 2px #999;
+	font-family: 'Tinos', serif;
+}
+
+#score{					/*Scroll to score btn*/
+	padding: 5px;
+	margin: -7% -11% auto auto;
+	position: sticky;
+	float: right;
+	top: 130px;
+	width: 100px;
+    text-align: center;
+	font-size: 18px;
+	font-family: 'Saira', sans-serif;
+	cursor: pointer;
+	outline: none;
+	transition: 0.5s;
+	color: black; 
+	border-radius: 5px;
+	border: #000000 1px solid;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); 
+	background-image: linear-gradient(to bottom , grey, lightgrey, white, lightgrey, grey);
+}
+
+#score:hover {			/*Scroll to score btn Hover*/
+	background-image: linear-gradient(to bottom , grey, white, white, white, grey);
+	color: #1b0061;
+	transform : scale(0.9);
+  }
+
+#Q1,#Q3,#Q5,#Q7,#Q9{  	/*summary report order*/
+	box-shadow: -5px 0px 10px black;
+	border-radius: 10px;
+	margin: 20px auto 0px auto;
+	width: 80%;
+	text-align: center;
+	font-family: 'Saira', sans-serif;
+}
+
+#Q2,#Q4,#Q6,#Q8,#Q10{ 	/*summary report order*/
+	box-shadow: 5px 0px 10px black;
+	border-radius: 10px;
+	margin: 20px auto 0px auto;
+	width: 80%;
+	text-align: center;
+	font-family: 'Saira', sans-serif;
+}
+
+#report{ 				/*display whole report*/
+	border-radius: 10px;
+	margin: auto;
+	font-size: 20px;
+	width: 80%;
+	
+}
+
+#img2{ 					/*animation bike (left side)*/ 
+	margin-top: -70px;
+	margin-left: -90px;
+	height: 250px;
+    width: 350px;
+}
+
+#img02{ 				/*animation bike (right side)*/
+	margin-top: -80px;
+	margin-left: 950px;
+	height: 250px;
+    width: 350px;
+}
+
+#ex,#ex2 { 				/*bike div animation*/
+	width: 100px;
+	height: 10px;
+	position: relative;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+#ex{					/*bike div animation (left)*/
+	animation-name: example;
+}
+
+#ex2{					/*bike div animation (right)*/
+	animation-name: example2;
+}
+
+  @keyframes example {	/*Animation from left to right*/
+	0%    {left:0; top:0px;}
+	50%  { left:950px; top:0px;}
+  }
+
+  @keyframes example2 {	/*Animation from right to left*/
+	0%    {right:0px; top:0px;}
+	50%  { right:950px; top:0px;}
+  }
+
+
+#emojicor,#emojiwro{	/*emojis div*/
+    float: right;
+    margin: -155px 220px auto auto;
+    padding-bottom: 5px;
+	width: 60px;
+	height: 60px;
+    border-radius: 20px;
+}
+
+.emo1{					/*correct image*/
+	height: 220px;
+	width: 220px;
+}
+
+.emo2{  				/*wrong image*/
+	height: 260px;
+	width: 260px;
+}
+#end{ 					/*display score & time*/
+	margin-left: 65px;
+	width: max-content;
+	border-radius: 10px;
+	background-color: rgba(46, 46, 46, 0.8);
+	/* background-image: linear-gradient(to right, lightgrey , white , lightgrey ); */
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#total-marks{  			/*display total marks*/
+	font-size: 30px;
+	height: 40px;
+	text-align: center;
+	margin-top: 50px;
+	padding-top: 10px ;
+	border-radius: 15px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: white;
+	width: auto;
+}
+
+#time_remaining{ 		/*display time_remaining*/
+	font-size: 30px;
+	height: 50px;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: white;
+	width: auto;
+	text-align: center;
+}
+
+#footer12{ 				/*footer black background*/
+    position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 35px;
+	color: white;
+	margin-bottom: 5px;
+	padding-top: 9px;
+	padding-bottom: 12px;
+
+}
+
+#link{ 					/*page developer icon*/
+	text-align: center;
+	font-size: 15px;
+	font-weight: normal;
+	font-family: "Gabriola";
+    color: white;
+	clear: both;
+	margin: auto;
+	background-color: rgba(0, 0, 0, 0.3);
+    width: 140px;
+	border-radius: 20px;
+}
+
+#link:hover{			/*Hover for pgd*/
+	color: black;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+#fimg{ 					/*page developer image*/
+	height: 30px;
+	width: 30px;
+	margin-top: 7px;
+	margin-bottom: -4px;
+	border-radius: 1000px;
+	background-color: white;
+}
+
+#pgd{ 					/*page developer div*/
+	float: right;
+	text-align: center;
+	margin: 10px 15px 10px -5px;
+}
+#b2t{ 					/*back to top*/
+	background-color: white;
+	position: sticky;
+	height:45px; 
+	width: 45px; 
+	bottom: 10px;
+	right: 14px;
+	float: right;
+	border-radius: 100px;
+}

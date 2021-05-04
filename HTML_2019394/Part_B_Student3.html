@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikers Paradise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> <!--feedback-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"><!--main headings-->
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet"> <!--Logo name-->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"><!--Specification table-->
+    <link rel="stylesheet" type="text/css" href="../CSS_2019394/Part_B_Student3.css">
+    <link rel="icon" href="../images_2019394/car2.png" type="image/icon type">
+</head>
+<body>
+
+  <!--COUNTDOWN VDO-->
+  <div id="mainvdo">
+  <video class="vdo1" autoplay muted >
+    <source src="../Videos_2019394/321.mp4" type="video/mp4">
+  </video>
+  </div>
+
+  <!--TITLE AND  LOGO-->
+  <div id="presentation" style="display: none;">
+    <div id="logo" >
+      <img src="../Images_2019394/logb2.png" id="logoimg">
+    </div>
+    <div id="identity">
+      <div id="myname">
+      ASHFAAQ AHAMED <br> 2019394
+    </div></div>
+  </div>
+
+  <!--Page start-->
+  <div id="mywebpage" style="display: none;">
+  
+    <div id="logo_main" onclick="logo()">
+      <img src="../Images_2019394/logb2.png" id="logoimg_main">
+    </div>
+
+    <div class="backgroundclass">
+      <img src="../Images_2019394/b3.jpg"  class="bg_img" >
+    </div>         
+    <div class="backgroundclass">
+        <img src="../Images_2019394/b16.jpg"  class="bg_img">
+    </div>
+    <div class="backgroundclass">
+        <img src="../Images_2019394/b7.jpg"  class="bg_img">
+    </div>
+    <div class="backgroundclass">
+      <img src="../Images_2019394/b13.jpg"  class="bg_img">
+    </div>
+    <div class="backgroundclass">
+      <img src="../Images_2019394/b14.jpg"  class="bg_img">
+    </div>
+    <div class="backgroundclass">
+      <img src="../Images_2019394/b15.jpg"  class="bg_img">
+    </div>
+    <div class="backgroundclass">
+      <img src="../Images_2019394/b12.jpg"  class="bg_img">
+    </div>
+    <div class="backgroundclass">
+      <img src="../Images_2019394/b5.jpg"  class="bg_img">
+    </div>
+    <div class="backgroundclass">
+      <img src="../Images_2019394/b17.jpg"  class="bg_img">
+    </div>
+    <div class="backgroundclass">
+      <img src="../Images_2019394/b20.jpg"  class="bg_img">
+    </div>
+    <div class="backgroundclass">
+      <img src="../Images_2019394/b21.jpg"  class="bg_img">
+    </div>    
+    <div class="backgroundclass">
+      <img src="../Images_2019394/b18.jpg"  class="bg_img">
+    </div>
+    <div class="backgroundclass">
+      <img src="../Images_2019394/b19.jpg"  class="bg_img">
+    </div>
+
+    <div id="navigation_bar" class="navigation">
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="nav-content">
+        <ul>
+          <li><a href="#newsfeed" onclick="closeNav()">Quotes</a></li>
+          <li><a href="#gallery" onclick="closeNav()">Gallery</a></li>
+          <li><a href="#vdo" onclick="closeNav()">Video</a></li>
+          <li><a href="#fdback" onclick="closeNav()">Feed back</a></li>
+          <li><a href="#footer" onclick="closeNav()">Page Developer</a></li>
+        </ul>    
+      </div>
+    </div>
+    <span id="menu"  onclick="openNav()">&#9776; Menu</span>
+
+    <div id="content">
+    
+    <!--section 1-->
+    <div id="newsfeed">
+    <h2 id="head">News Feed</h2>
+    
+        <div id="news1">
+            <div id="photo">
+              <img src="../Images_2019394/valentino.jpg" id="quote1img">
+            </div>
+            <div id="text">
+              <div id="quote1">“Riding a race bike is an art - a thing that you do because you feel something inside.”</div>
+              <div id="author1">~Valentino Rossi~</div>
+              <img src="../Images_2019394/Valentino-Rossi.jpg" id="bgquote">
+            </div>
+            
+        </div>
+        <div id="news2">
+            <div id="photo">
+              <img src="../Images_2019394/Evel-Knievel.jpg" id="quote1img">
+            </div>
+            <div id="text">
+              <div id="quote1">“The older I get, the faster I was. There are old bikers and there are bold bikers, but there are no old, bold bikers.”</div>
+              <div id="author1">~Evel Knievel~</div>
+              <img src="../Images_2019394/evel.jpg" id="bgquote">
+            </div>
+        </div> 
+        <div id="news3">
+            <div id="photo">
+              <img src="../Images_2019394/Barrys.jpg" id="quote1img">
+            </div>
+            <div id="text">
+              <div id="quote1">“Don't wait for your ship to come in, swim out and meet the bloody thing.”</div>
+              <div id="author1">~Barry Sheene~</div>
+              <img src="../Images_2019394/Barry.jpg" id="bgquote">
+            </div>
+        </div>
+    </div>
+
+    <!--section 2-->
+    <div id="gallery">
+        <h2 id="head">Gallery</h2>
+    <div class="artgallery">
+        <div id="thumbnails">
+          <div id="upper">
+            <h2 class="spb1">-- Super Bikes</h2>
+              <div class="column1">
+                <img src="../Images_2019394/diavel.jpg" class="a1" alt="Ducati Diavel" onclick="displayimage(this),image1();">
+              </div>
+              <div class="column1">
+                <img src="../Images_2019394/Kawasaki h2.jpeg" class="a1" alt="Kawasaki Ninja H2" onclick="displayimage(this),image2();">
+              </div>
+              <div class="column1">
+                <img src="../Images_2019394/cbr1.jpeg"  class="a1" alt="Honda CBR" onclick="displayimage(this),image3();">
+              </div>
+              <div class="column1">
+                <img src="../Images_2019394/r1.jpg"  class="a1" alt="Yamaha YZF R1" onclick="displayimage(this),image4();" >
+              </div>
+              <div class="column1">
+                <img src="../Images_2019394/pani1.jpg"  class="a1" alt="Ducati Panigale V4" onclick="displayimage(this),image5();">
+              </div>
+              <div class="column1">
+                <img src="../Images_2019394/1000bmw.jpg"  class="a1" alt="BMW 1000RR" onclick="displayimage(this),image6();">
+              </div> 
+          </div>
+          <div id="lower">  
+            <h2 class="spb2">-- Bikes</h2>  
+              <div class="column2">
+                <img src="../Images_2019394/apache2.jpg"  class="a1" alt="Apache RTR 200" onclick="displayimage(this),image7();">
+              </div>
+              <div class="column2">
+                <img src="../Images_2019394/kawasaki2.jpg"  class="a1" alt="Kawasaki Ninja" onclick="displayimage(this),image8();">
+              </div>      
+              <div class="column2">
+                <img src="../Images_2019394/ktm.jpg"  class="a1" alt="KTM Duke" onclick="displayimage(this),image9();">
+              </div>
+              <div class="column2">
+                <img src="../Images_2019394/hornet1.jpg"  class="a1" alt="Honda Hornet 160R" onclick="displayimage(this),image10();">
+              </div>
+              <div class="column2">
+                <img src="../Images_2019394/ns.jpg"  class="a1" alt="Pulsar NS 200" onclick="displayimage(this),image11();">
+              </div>
+              <div class="column2">
+                <img src="../Images_2019394/hyper.jpg"  class="a1" alt="Ducati Hypermotard" onclick="displayimage(this),image12();">
+              </div>
+          </div>
+          </div>
+      </div>
+        
+        <div id="picture">
+          <div class="showimage"><img src="../Images_2019394/logaa2.png" id="img001"></div>
+        </div>
+        
+        <div id="description" style="text-align: center;">BIKERS PARADISE</div>
+
+        <div id="specifications" style="display: none;">
+          <div id="specs">
+          <table id="specs_table">
+            <tr>
+                <td id="left_col">ENGINE DISP.</td>
+                <td id="a1" class="r2"></td>
+            </tr>
+            <tr>
+                <td id="left_col">POWER</td>
+                <td id="a2" class="r2"></td>
+            </tr>
+            <tr>
+                <td id="left_col">FUEL CAPACITY</td>
+                <td id="a3" class="r2"></td>
+            </tr>
+            <tr>
+                <td id="left_col">MILEAGE</td>
+                <td id="a4" class="r2"></td>
+            </tr>
+            <tr>
+                <td id="left_col">GEAR BOX</td>
+                <td id="a5"></td>
+            </tr>
+            <tr>
+                <td id="left_col">TOP SPEED</td>
+                <td id="a6"></td>
+            </tr>
+            <tr>
+                <td id="left_col">PRICE</td>
+                <td id="a7"></td>
+            </tr>
+        </table>
+        </div>
+
+      </div>
+      </div>
+
+      <!--VDO CLIPS-->
+
+      <div id="vdo">
+        <h2 id="head">Video</h2>
+        <div class="line"> 
+          <div id="displayvdo">
+            
+              <video class="mySlides" id="vd11" onmouseover="cont();" onmouseout="remcont()">
+                <source src="../Videos_2019394/hornet-promo.mp4" type="video/mp4">
+              </video>
+              <video class="mySlides" id="vd12" onmouseover="cont();" onmouseout="remcont()">
+                  <source src="../Videos_2019394/r1-promo.mp4" type="video/mp4">
+              </video>
+              <video class="mySlides" id="vd13" onmouseover="cont();" onmouseout="remcont()">
+                  <source src="../Videos_2019394/bmw1000-rr.mp4" type="video/mp4">
+              </video>
+          
+          
+            <button class="next" onclick="plusDivs(1)">&#10095;</button>
+            <button class="prev" onclick="plusDivs(-1)">  &#10094;</button>
+          
+            <div id="vidname">
+              <span class="vdodot" onclick="currentSlide(1),start1()">HONDA HORNET 160R</span> 
+              <span class="vdodot" onclick="currentSlide(2),start2()">YAMAHA R1</span> 
+              <span class="vdodot" onclick="currentSlide(3),start3()">BMW 1000RR</span> 
+            </div>
+          </div>
+        </div>    
+             
+      </div>  
+
+    <!--feedback-->
+    <div id="fdback">
+    <h2 id="head">Feedback</h2>
+        <div id="form">
+            <form name="fdbk" id="form1" >
+                <label class="lbl"><b>Name : </b></label><div id="name"><input type="text" placeholder="Name" id="inputname" name="name" required></div><br>
+                <label class="lbl"><b>Comments : </b></label> <div id="txtarea"><textarea placeholder="Your comments" cols="25" rows="5" name="comment" ></textarea></div>
+                <label class="lbl"><b>Rate my page :</b></label><br>
+                <div id="rdo">
+                  <input type="radio" value="Weak" id="r1" class="rad" name="rating"><label for="r1" class="btn">Weak</label><br>
+                  <input type="radio" value="Could improve" id="r2" class="rad" name="rating"><label for="r2" class="btn">Could Improve</label><br>
+                  <input type="radio" value="Moderate" id="r3" class="rad" name="rating"><label for="r3" class="btn">Moderate</label><br>
+                  <input type="radio" value="Good" id="r4" class="rad" name="rating"><label for="r4" class="btn">Good</label><br>
+                  <input type="radio" value="Extra-ordinary" id="r5" class="rad" name="rating" checked><label for="r5" class="btn">Extra Ordinary</label><br><br>
+                </div>
+
+                <input type="button" value="Submit" id="Submit" onclick="Submit.disabled = true; return display()">
+                <input type="button" value="Reset" id="Reset" onclick="rest();">
+            </form>
+        </div>
+        <div id="reply" style="display: none;"><b><u>Review Of Your Feedback</u></b>
+          <div id="response"></div>
+        </div>
+
+    </div>
+    
+    
+  </div>
+
+    <div id="footer">
+      <h2 id="head">Page Developer</h2>
+      <div id="myimage">
+        <img src="../Images_2019394/me.jpeg" id="mypic">
+      </div>
+      <div id="details">
+        <p id="pdname">Ashfaaq Ahamed<br>B(Eng.)Software Engineering in IIT<br>Student ID - 2019394</p>
+        <div id="socialmedias">
+          <a href="https://www.linkedin.com/in/ashfaaq-hilal-a93514198/" target="_1" title="Linkedin"><img src="../Images_2019394/linkedin.png" id="linkedin"></a>
+          <a href="https://www.instagram.com/ashfxxq_ahxmed/?hl=en" target="_2" title="Instagram"><img src="../Images_2019394/insta.png" id="insta"></a>
+          <a href="mailto:ashfaaq.2019394@iit.ac.lk" target="_3" title="E-mail"><img src="../Images_2019394/email.png" id="email"></a>
+          <a href="https://www.facebook.com/ashfaaq.ahamed.988" target="_4" title="Facebook"><img src="../Images_2019394/facebook.png" id="fb"></a>
+          <a href="tel:0767763364" target="_5" title="Telephone"><img src="../Images_2019394/tel.png" id="tel"></a>
+        </div>
+      </div>
+      
+    </div>
+    <a href="#" title="Back to top"><img src="../Images_2019394/backtotop.png" id="b2t"></a>
+  </div>
+   
+<script src="../JS_2019394/BikersParadise.js"></script>
+
+</body>
+</html>

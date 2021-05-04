@@ -1,0 +1,134 @@
+body{
+    background-image: url(../images_2019407/fb1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+
+
+/*styling the feedback name*/
+h1{
+  font-family: fantasy;
+  text-align: center;
+  text-transform: uppercase;
+  }
+
+/*styling the form container*/
+.form_container {
+      position: absolute;
+      top:100px;
+      left: 15%;
+      color: white;
+      font-weight: lighter;
+      width: 500px;
+      padding: 5px;
+      background-color: rgba(0,0,0,0.8); 
+      border-radius: 10px;
+      height: 580px;
+                  }
+
+/*styling the inputs of the form*/
+.form_container input[type=text], .form_container input[type=email],  .form_container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border-color: black;
+      border-width: 1px;
+      border-radius: 5px;
+      background-color: white;
+      }
+
+/* focusing the inputs to do something*/
+.form_container input[type=text]:focus, .form_container input[type=email]:focus {
+      background-color: white;
+      outline: none;
+      }
+
+/*styling the submit button*/
+.form_container .submit {
+                        border-radius: 25px;
+                        background-color: green;
+                        color: white;
+                        padding: 10px 0px;
+                        border: none;
+                        cursor: pointer;
+                        width: 100px;
+                        opacity: 0.8;
+                       }
+
+/*styling the clear button*/
+.form_container .clear {
+                        border-radius: 25px;
+                        background-color: red;
+                        color: white;
+                        padding: 10px 0px;
+                        border: none;
+                        cursor: pointer;
+                        width: 100px;
+                        opacity: 0.8;
+                      }
+
+/*styling the back button*/
+.back {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      border-radius: 25px;
+      background-color: gray;
+      color: white;
+      padding: 10px 0px;
+      border: none;
+      cursor: pointer;
+      width: 100px;
+      opacity: 0.8;
+    }
+
+/*adding hover effects to submit, clear and back buttons*/
+.form_container .submit:hover, .clear:hover, .back:hover {
+              opacity: 1;
+              }
+
+/*aligning the radio-buttons in the form*/
+.rt_align{
+         margin-left: 150px;
+          }
+
+/*styling the link of the page developer button*/  
+#link{
+      position: fixed;
+      bottom: 0px;
+      right:45%;
+      text-align: center;
+      font-size: 15px;
+      font-weight: normal;
+      font-family: "Gabriola";
+      color: white;
+      clear: both;
+      background-color: rgba(0, 0, 0, 0.3);
+      width: 140px;
+      border-radius: 20px;
+    }
+
+/*adding hover effect to the page developer button*/
+#link:hover{
+            color: black;
+            background-color: rgba(255, 255, 255, 0.7);
+            }
+
+/*positing and sizing of the page developer image*/
+#fimg{
+      height: 30px;
+      width: 30px;
+      margin-top: 7px;
+      margin-bottom: -4px;
+      border-radius: 1000px;
+      background-color: white;
+      }
+
+/*positioning the page developer text*/
+#pgd{
+    float: right;
+    text-align: center;
+    margin: 10px 15px 10px -5px;
+    }

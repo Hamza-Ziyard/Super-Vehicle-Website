@@ -1,0 +1,124 @@
+body{
+    background-image: url(../images_2019407/bike4.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    }
+
+/*user profile topic*/
+h1{
+    font-family: cursive;
+    color: whitesmoke;
+    font-weight: bolder;
+    text-shadow: 5px 5px 10px black;
+    font-size: 72px;
+    position: fixed;
+    top:30px;
+    left: 100px;
+    }
+
+/*design the complete card*/
+.card{
+    border: 5px solid black;
+    box-shadow: 10px 10px 30px black;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    width: 300px;
+    height: 360px;
+    }
+
+/*adjust the photo*/
+.card .photo{
+            border-radius: 10px;
+            width: 300px;
+            height: 360px;
+            }
+
+/*adjust information*/
+#details_card{
+            opacity: 0.9;
+            border-radius: 10px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            color: white;
+            }
+
+
+/*positing the social media buttons*/
+.social_btn{
+            position: absolute;
+            top: 80%;
+            left: 10%;        
+            }
+
+/*adjusting the social media buttons*/
+button{
+       border: black;
+       border-radius: 12px;
+       cursor: pointer;
+       margin-right : 5px;
+       transition: 0.3s;
+      }
+
+/*adjusting size of social media buttons*/
+#icon{
+    height: 30px;
+    width: 30px;
+    }
+
+/*adding hover effects to the social media buttons*/    
+.fb:hover{
+          transform: scale(0.9);
+          background-color:rgb(59,89,153);
+         }
+.insta:hover{
+            transform: scale(0.9);
+            background-color:rgb(228,64,95);
+            }
+.email:hover{
+            transform: scale(0.9);
+            background-color:rgb(212, 70, 56);
+            }
+.twitter:hover{
+               transform: scale(0.9);
+               background-color:rgb(85,172,238);
+              }
+
+.watsapp:hover{
+              transform: scale(0.9);
+              background-color:rgb(37,211,102);
+              }
+
+/*adjusting the home button*/              
+.home {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      border-radius: 25px;
+      font-family: cursive;
+      background-color: white;
+      padding: 10px 0px;
+      border: none;
+      cursor: pointer;
+      width: 100px;
+      opacity: 0.8;
+      }
+
+/*designing the link of the home button*/      
+.home a{
+        color: black;
+        text-decoration: none;
+        }
+
+/*adding hover effect to the home button*/
+ .home:hover {
+            opacity: 1;
+            }

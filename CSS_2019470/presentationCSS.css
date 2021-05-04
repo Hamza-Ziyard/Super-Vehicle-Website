@@ -1,0 +1,62 @@
+body{
+    background-image: url("../images_2019470/presentation bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: capitalize;
+}
+
+.title{
+    
+   font-family: 'Tinos', serif;
+    margin-top:5%;
+    margin-left: 14%;
+    font-size:6vw;
+    color:rgba(255, 255, 255, 0.747);
+    mix-blend-mode: soft-light;
+    
+}
+
+
+.members{
+    width:auto;
+    height:auto;
+    color:rgba(255, 255, 255, 0.863);
+    float: left;
+    margin-top: -7%;
+    margin-left:13%;
+    display: block;
+   
+   
+}
+
+
+.student{
+    position: relative;
+    top:40px;
+    left:10px;
+    height: 475px;
+    float: left;
+    margin-right:30px;
+    margin-left: 0;
+    transform: rotate3d(1, 1, 1, 0deg);
+    border-style: groove;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.8);
+    mix-blend-mode: exclusion;
+    
+
+
+}
+
+.member{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.description{    
+    font-family: 'Saira', sans-serif;
+    font-size:2vw;
+    color:white;
+    padding-left: 10%;
+}
+

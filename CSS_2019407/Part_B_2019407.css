@@ -1,0 +1,883 @@
+/*remove margin of the body of the page*/
+body{
+  margin: 0;
+    }
+
+/*styling the rolls-royce logo*/
+.logo{
+      height: 150px;
+      width: 150px;
+      position: fixed;
+      top: 10px;
+      left: 0px;
+      box-shadow: 5px 5px 5px black;
+      border-radius: 50px;
+      }
+
+/*adjusting the length of the slide bar*/
+::-webkit-scrollbar {
+                      width: 15px;
+                    }
+
+/*adjusting the track of the scrollbar*/
+::-webkit-scrollbar-track {
+                          background-color: black; 
+                        }
+
+/*styling the slidebar*/
+::-webkit-scrollbar-thumb {
+                            background-color: gray; 
+                            border-radius: 3px;
+                          }
+
+/*positioning the navigation bar*/
+ul{
+  font-family:'Rajdhani', sans-serif;
+  position: absolute;
+  bottom:380px;
+  right: -180px;
+  margin: 300px 200px;
+  padding: 0;
+  display: flex;
+}
+
+/*styling each items in the list*/
+ul li{
+      list-style: none;
+      padding: 10px 20px;
+    }
+
+/*styling each link of the list*/
+ul li a{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 35px;
+        color: white;
+        position: relative;
+      }
+
+/*styling link before the effect*/
+ul li a:before{
+              content: "";
+              width: 0;
+              height: 2px;
+              background: crimson;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              transition: 0.5s;
+            }
+
+/*adding hover effect to the links*/
+ul li a:hover{
+              font-weight: bold;
+              color: crimson;
+            }
+
+/*styling the final movement of the hover effect*/
+ul li:hover a:before{
+                      width: 50%;
+                      height: 4px;
+                      transform: translateX(100%);
+                    }
+
+/*positioning the background video*/
+#bgVideo{
+          position: fixed; 
+          height: 100%;
+          width: 100%;
+          object-fit: fill;
+        }
+
+/*styling the motto word*/
+.intro{
+      position: absolute;
+      top:520px;
+      left: 450px;
+      color: white;
+      font-size: 70px;
+      font-family: 'Rajdhani', sans-serif;
+      text-transform: uppercase;
+    }
+
+/*stlying the whole box containg all information*/
+.details{
+        position: absolute;
+        top:770px;
+        left:7%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: rgb(38, 38, 38);
+        width: 87%;
+        height: 7500px;
+      }
+
+/*stlying all topics*/
+.topics{
+        text-transform: capitalize;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+       }
+
+/*hover effect to the topics first letter*/
+.topics:hover span{
+                  color: crimson;
+                  font-size: 60px;
+                }
+
+/*middle image of aboutus*/
+.main1{
+      position: absolute;
+      top:170px;
+      left: 400px;
+      border-radius: 15px;
+      height: 350px;
+      width: 500px;
+    }
+
+/*left image of aboutus*/
+.main2{
+      position: absolute;
+      top: 225px;
+      left:10px;
+      border-radius: 15px;
+      height: 250px;
+      width: 380px;
+    }
+
+/*right image of aboutus*/
+.main3{
+      position: absolute;
+      top: 225px;
+      left:910px;
+      border-radius: 15px;
+      height: 260px;
+      width: 380px;
+    }
+
+/*paragraph of aboutus*/
+#aboutus{
+          position: absolute;
+          top: 550px;
+          left: 50px;
+          font-family: 'Rajdhani', sans-serif;
+          width: 90%;
+          color: white ;
+          border-radius: 15px;
+          font-size: 20px;
+          text-align: center;
+        }
+
+/*middle detail box of each car brand*/
+.pgwddetails1{
+              text-align: center;
+              position: absolute;
+              top:750px;
+              left: 450px;
+              height: 450px;
+              width: 400px;
+              border-radius: 10px;
+              background-color: rgb(99, 99, 99);
+              transition: 0.5s;
+            }
+
+/*left detail box of each car brand*/
+.pgwddetails2{
+              color: white;
+              position: absolute;
+              top:770px;
+              left: 100px;
+              height: 400px;
+              width: 300px;
+              border-radius: 10px;
+              background-color: rgb(51, 51, 51);
+              transition: 0.5s;
+            }
+
+/*right detail box of each car brand*/
+.pgwddetails3{
+              color: white;
+              position: absolute;
+              top:770px;
+              left: 900px;
+              height: 400px;
+              width: 300px;
+              border-radius: 10px;
+              background-color: rgb(51, 51, 51);
+              transition: 0.5s;
+            }
+
+/*styling the images in the detail boxs of all brands*/
+.pgwd{
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+
+/*adding hover effects to all detail boxes of the car brands*/
+.pgwddetails1:hover ,.pgwddetails2:hover, .pgwddetails3:hover{
+                                                      cursor: pointer;
+                                                      box-shadow: 20px 20px 15px black;
+                                                      transform: scale(1.1);
+                                                    }
+
+/*styling topic in detail boxes*/
+h2{
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/*positioning the blured bg video*/
+#blur1Video,#blur2Video,#blur3Video,#blur4Video{
+                                                position: absolute;
+                                                top: 120px;
+                                                height: 800px;
+                                                width: 1300px;
+                                                object-fit: fill;
+                                                filter: blur(10px);     
+                                                }
+
+/*positioning from where the phantom box begins*/
+#phantom{
+          position: absolute;
+          top: 1000px;
+          width: 100%;
+        }
+
+/*positioning and styling the phantom video*/
+#phantomvideo{
+              cursor: pointer;
+              position: absolute;
+              top: 200px;
+              left:100px;
+              height:500px;
+              width: 1100px;  
+            }
+
+/*middle info box in phantom*/
+.p1det{
+      margin: 30px 45px 0 45px;
+      color: white;
+      font-family: 'Darker Grotesque', sans-serif;
+      line-height: 1;
+      font-weight: 10;
+      font-size: 20px;
+    }
+
+/*left and right info box in phantom*/
+.p2det{
+        margin: 30px 35px 0 35px;
+        color: white;
+        font-family: 'Darker Grotesque', sans-serif;
+        line-height: 1;
+        font-weight: 10;
+        font-size: 16px;
+        text-align: center;
+      }
+
+/*positioning from where the ghost box begins*/
+#ghost{
+      position: absolute;
+      top: 2300px;
+      width: 100%;
+    }
+
+/*positioning and styling the ghost video*/
+#ghostvideo{
+            cursor: pointer;
+            position:absolute;
+            left: 100px;
+            height:500px;
+            width: 1100px;
+          }
+
+/*middle info box in ghost*/
+.g1det{
+        margin: 25px 40px 0 40px;
+        color: white;
+        font-family: 'Darker Grotesque', sans-serif;
+        line-height: 1;
+        font-weight: 10;
+        font-size: 20px;
+      }
+
+/*left and right info box in ghost*/
+.g2det{
+      margin: 15px 25px 0 25px;
+      color: white;
+      font-family: 'Darker Grotesque', sans-serif;
+      line-height: 1;
+      font-weight: 10;
+      font-size: 16px;
+      text-align: center;
+    }
+
+/*positioning from where the wraith box begins*/
+#wraith{
+        position: absolute;
+        top: 3600px;
+        width: 100%;
+      }
+
+/*positioning and styling the wraith video*/
+#wraithvideo{
+            cursor: pointer;
+            position: absolute;
+            left: 100px;
+            height: 500px;
+            width: 1100px;
+          }
+
+/*middle info box in wraith*/
+.w1det{
+        margin: 25px 40px 0 40px;
+        color: white;
+        font-family: 'Darker Grotesque', sans-serif;
+        line-height: 1;
+        font-weight: 10;
+        font-size: 20px;
+      }
+
+/*left and right info box in wraith*/
+.w2det{
+        margin: 35px 25px 0 25px;
+        color: white;
+        font-family: 'Darker Grotesque', sans-serif;
+        line-height: 1;
+        font-weight: 10;
+        font-size: 16px;
+        text-align: center;
+      }
+
+/*positioning from where the dawn box begins*/
+#dawn{
+      position: absolute;
+      top: 4900px;
+      width: 100%;
+    }
+
+/*positioning and styling the dawn video*/
+#dawnvideo{
+          cursor: pointer;
+          position: absolute;
+          left: 150px;
+          height: 500px;
+          width: 1000px;
+        }
+
+/*middle info box in dawn*/
+.d1det{
+      margin: 25px 40px 0 40px;
+      color: white;
+      font-family: 'Darker Grotesque', sans-serif;
+      line-height: 1;
+      font-weight: 10;
+      font-size: 20px;
+    }
+
+/*left and right info box in dawn*/
+.d2det{
+      margin: 35px 15px 0 15px;
+      color: white;
+      font-family: 'Darker Grotesque', sans-serif;
+      line-height: 1;
+      font-weight: 10;
+      font-size: 16px;
+      text-align: center;
+    }
+
+/*styling the link of the configure yours button*/
+#choice{
+        color: white;
+        font-family:'Rajdhani', sans-serif;
+        font-size: 60px;
+        margin-left: 150px;
+        text-transform: capitalize;
+      }
+
+/*styling the configure yours button*/
+.choicebtn{
+          position: absolute;
+          top:1250px;
+          left: 1100px;
+          height: 45px;
+          width: 140px;
+          background-color: rgb(52, 117, 214);
+          padding:5px 15px;
+          color: white;
+          font-family:'Rajdhani', sans-serif;
+          font-size: 15px;
+          border-radius:10px ;
+          border-color: transparent;
+          cursor: pointer;
+          opacity: 0.7;
+          transition: 0.3s;
+        }
+
+/*adding hover effect to the configure yours button*/
+.choicebtn:hover{
+              opacity: 1;
+              color: black;
+              font-weight: bold;
+              transform: scale(1.1);
+            }
+
+/*positioning the begining choice box*/
+.choice{
+        position: absolute;
+        top: 6400px;
+        left: 70px;
+      }
+
+/*backkground image of the choice box*/
+.honeycomb{
+          position: absolute;
+          left: 0;
+          right: 2px;
+          box-shadow: 0px 0px 50px 45px rgb(0,0,0,0.5);
+          width: 1170px;
+          border-radius: 20px;
+        }
+
+/*styling red choice button*/
+#colbtnr{
+          position: absolute;
+          top: 220px;
+          left: 150px;
+          height: 45px;
+          width: 100px;
+          background-color: crimson;
+          padding:5px 15px;
+          color: white;
+          font-family:'Rajdhani', sans-serif;
+          font-size: 15px;
+          border-radius:10px ;
+          border-color: transparent;
+          cursor: pointer;
+          opacity: 0.7;
+          }
+
+/*styling blue choice button*/
+#colbtnb{
+        position: absolute;
+        top: 220px;
+        left: 300px;
+        height: 45px;
+        width: 100px;
+        background-color: blue;
+        padding:5px 15px;
+        color: white;
+        font-family:'Rajdhani', sans-serif;
+        font-size: 15px;
+        border-radius:10px ;
+        border-color: transparent;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+
+/*styling silver choice button*/
+#colbtns{
+        position: absolute;
+        top: 220px;
+        left: 450px;
+        height: 45px;
+        width: 100px;
+        background-color: silver;
+        padding:5px 15px;
+        color: black;
+        font-family:'Rajdhani', sans-serif;
+        font-size: 15px;
+        border-radius:10px ;
+        border-color: transparent;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+
+/*styling black choice button*/
+#colbtnbl{
+          position: absolute;
+          top: 220px;
+          left: 600px;
+          height: 45px;
+          width: 100px;
+          background-color: black;
+          padding:5px 15px;
+          color: white;
+          font-family:'Rajdhani', sans-serif;
+          font-size: 15px;
+          border-radius:10px ;
+          border-color: transparent;
+          cursor: pointer;
+          opacity: 0.7;
+        }
+
+/*styling white choice button*/
+#colbtnw{
+        position: absolute;
+        top: 220px;
+        left: 750px;
+        height: 45px;
+        width: 100px;
+        background-color: white;
+        padding:5px 15px;
+        color: black;
+        font-family:'Rajdhani', sans-serif;
+        font-size: 15px;
+        border-radius:10px ;
+        border-color: transparent;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+
+/*styling gold choice button*/
+#colbtng{
+        position: absolute;
+        top: 220px; 
+        left: 900px;
+        height: 45px;
+        width: 100px;
+        background-color: gold;
+        padding:5px 15px;
+        color: white;
+        font-family:'Rajdhani', sans-serif;
+        font-size: 15px;
+        border-radius:10px ;
+        border-color: transparent;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+
+/*adding hover effect to the red,blue,white,gold choice button*/
+#colbtnr:hover,#colbtnb:hover,#colbtnw:hover,#colbtng:hover{
+                                                            opacity: 1;
+                                                            color: black;
+                                                            font-weight: bold;
+                                                          }
+
+/*adding hover effect to the black,silver choice button*/
+#colbtnbl:hover,#colbtns:hover{
+                            opacity: 1;
+                            font-weight: bold;
+                          }
+
+/*size of the box of the car to be displayed*/
+#colimg{
+        position: absolute;
+        top: 300px;
+        width: 1200px;
+        }
+
+/*styling the red car image*/
+.redimg{
+        position: absolute;
+        left:150px;
+        height: 700px;
+        width: 850px;
+      }
+
+/*styling the blue car image*/
+.blueimg{
+        position: absolute;
+        top: 120px;
+        left:140px;
+        height: 400px;
+        width: 850px;
+      }
+
+/*styling the silver car image*/
+.silverimg{
+          position: absolute;
+          left:100px;
+          top: 70px;
+          height: 550px;
+          width: 1000px;
+        }
+
+/*styling the black car image*/
+.blackimg{
+          position: absolute;
+          top: 50px;
+          left:100px;
+          height: 600px;
+          width: 1000px;
+        }
+
+/*styling the white car image*/
+.whiteimg{
+          position: absolute;
+          left:70px;
+          height: 750px;
+          width: 1000px;
+        }
+
+/*styling the gold car image*/
+.goldimg{
+        position: absolute;
+        left:50px;
+        height: 550px;
+        width: 1100px;
+      }
+
+/*positioning the rate button*/
+.rt_button{
+          position: fixed;
+          top:650;
+          right: 10;
+          }
+
+/*styling the rate button*/
+.rate{  
+      border-style: solid;
+      border-color: black;
+      font-family:'Rajdhani', sans-serif;
+      height: 45px;
+      width: 100px;
+      border-radius: 10px;
+      letter-spacing: 2px;
+      position: relative;
+      font-size: 15px;
+      font-weight: bolder;
+      background:transparent;
+      cursor: pointer;
+      user-select: none;
+      color:rgb(15, 15, 15);
+      overflow: hidden;
+      }
+
+/*styling and postioning the span tag of the button*/
+.rate span{
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background:rgb(160, 158, 153);
+          z-index: -1;
+          border: 5px solid rgb(168, 168, 166);
+          }
+
+/*styling the diagonal line*/
+.rate span::before{
+        content:'';
+        position: absolute;
+        width: 8%;
+        height:500%;
+        top: 50%;
+        left: 50%;
+        background: rgb(201, 200, 198);
+        transform: translate(-50%,-50%) rotate(-60deg);
+        transition: all 0.3s;
+            }
+
+/*adding hover effect to the span tag to move diagonal*/
+.rate:hover span::before,.rate:focus span::before{
+                                            transform: translate(-50%,-50%) rotate(-90deg) ;
+                                            width:100%;
+                                            background: rgb(168, 168, 166);
+                                            }
+
+/*focus the rate word in the button after hover effect*/
+.rate:hover,.rate:focus{
+                    color: white;
+                    }
+
+/*stlying the feedback name*/ 
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-family:'Rajdhani', sans-serif;
+}
+
+/*styling the postion of form after popup*/
+.form_popup {
+            display: none;
+            position: fixed;
+            bottom: 25px;
+            top: 100px;
+            right: 15px;
+            }
+
+/*stlying the feedback form container*/
+.form_container {
+                font-family:'Rajdhani', sans-serif;
+                max-width: 320px;
+                height: 600px;
+                padding: 10px;
+                background-color: rgb(151, 151, 151);
+                border-radius: 10px;
+                }
+
+/*styling the name box*/
+.form_container input[type=text] {
+                                  width: 100%;
+                                  padding: 15px;
+                                  margin: 5px 0 30px 0;
+                                  border: none;
+                                  background: rgb(255, 255, 255);
+                                  }
+
+/*aligning the rating buttons*/
+.rt_align{
+          margin-left: 80px;
+          }
+
+/*styling the name box after focus*/
+.form_container input[type=text]:focus {
+                                        background-color: white;
+                                        outline: none;
+                                        }
+
+/*styling the submit button*/
+.form_container .submit {
+                    border-radius: 15px;
+                    background-color: green;
+                    color: white;
+                    padding: 10px 0px;
+                    border: none;
+                    cursor: pointer;
+                    width: 100px;
+                    opacity: 0.8;
+                    font-family:'Rajdhani', sans-serif;
+                   }
+
+
+/*styling the cancel button*/
+.form_container .cancel {
+                      border-radius: 15px;
+                      background-color: white;
+                      color: black;
+                      padding: 10px 0px;
+                      border: none;
+                      cursor: pointer;
+                      width: 100px;
+                      opacity: 0.8;
+                      font-family:'Rajdhani', sans-serif;
+                    }
+
+/*styling the clear button*/
+.form_container .clear {
+                      margin-top: 30px;
+                      border-radius: 15px;
+                      background-color: red;
+                      color: white;
+                      padding: 10px 0px;
+                      border: none;
+                      cursor: pointer;
+                      width: 100px;
+                      opacity: 0.8;
+                      font-family:'Rajdhani', sans-serif;
+                    }
+
+/*adding hover effects to the submit,cancel,clear buttons*/
+.form_container .submit:hover, .open_button:hover,.clear:hover {
+                                                            opacity: 1;
+                                                            }
+
+/*positioning and styling the back too top button*/
+#b2t{
+    position: fixed;
+    height:30px; 
+    width: 40px;
+    top: 700px; 
+    left: 20px;
+    border-radius:20px ;
+    right: 14px;
+    float: left;
+  }
+
+/*stlying the page developer box*/
+.footer{
+        position: absolute;
+        top: 8270px;
+        left:67px;
+        background-color:black;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+        border-style:solid;
+        border-color: white;
+        width: 1400px;
+        height: 320px;
+      }
+
+/*styling the word Page Developer*/
+.pd{
+  font-size: 45px;
+  margin-top: 70px;
+  margin-left: 50px;
+  font-family:'Rajdhani', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+/*adding my picture*/
+.pdpic{
+      position: absolute;
+      top: 75px;
+      right: 100px;
+      height: 200px;
+      width: 180px;
+      box-shadow: 0px 0px 10px 12px rgb(0,0,0,0.3);
+      border-radius: 20px;
+}
+
+/*styling my details*/
+.pdname{
+        position: absolute; 
+        font-family:'Rajdhani', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        right: 350px;
+        top: 150px;
+        color: white;
+      }
+
+/*styling the social media buttons*/
+#iconfb,#iconinsta,#iconemail,#icontwitter,#iconwatsapp{
+                                              background-color: rgb(240, 240, 240);
+                                              border-radius:20px ;
+                                              padding: 10px;
+                                              position: relative;
+                                              left: 30px;
+                                              margin-left:20px;
+                                              margin-top: 70px;
+                                              height: 20px;
+                                              width: 20px;
+                                              box-shadow: 0px 0px 10px 10px rgba(100, 100, 100, 0.3);
+                                              transition: 0.5s;
+                                            }
+
+/*adding hover effect to the fb icon*/
+#iconfb:hover{
+            box-shadow: 1px 1px 7px 7px rgb(255,255,255,0.3); 
+            background-color:rgb(59,89,153);
+          }
+
+/*adding hover effect to the insta icon*/
+#iconinsta:hover{
+                box-shadow: 1px 1px 7px 7px rgb(255,255,255,0.3); 
+                background-color:rgb(225,48,108);
+              }
+
+/*adding hover effect to the email icon*/
+#iconemail:hover{
+                box-shadow: 1px 1px 7px 7px rgb(255,255,255,0.3); 
+                background-color:rgb(212, 70, 56);
+              }
+
+/*adding hover effect to the twitter icon*/
+#icontwitter:hover{
+                  box-shadow: 1px 1px 7px 7px rgb(255,255,255,0.3); 
+                  background-color:rgb(85,172,238);
+                }
+
+/*adding hover effect to the whatsapp icon*/
+#iconwatsapp:hover{
+                  box-shadow: 1px 1px 7px 7px rgb(255,255,255,0.3); 
+                  background-color:rgb(37,211,102);
+                }
+

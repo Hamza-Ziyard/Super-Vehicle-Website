@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS_2019394/Quiz_Student3.css">   <!--Quiz page css-->
+    <link rel="stylesheet" type="text/css" href="../CSS_2019407/external_2019407.css">   <!--Navigation bar-->
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500&display=swap" rel="stylesheet"> <!--contents page-->
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet"> <!--heading-->
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images_2019394/car2.png" type="image/icon type">
+    <title>Quiz Page</title>
+</head>
+<body>
+    <div id="header">
+    <div id="logo">
+        <a href="../HTML_2019407/Main_2019407.html"><img src="../Images_2019394/car2.png" id="img"></a>
+    </div>
+    <div class="navigation_bar">
+        <nav>
+            <ul>
+                <li><a href="../HTML_2019407/Main_2019407.html">Home</a></li> 
+                <li><a href="../HTML_2019470/shopsite.html">Shop</a></li>  	
+                <li><a href="../HTML_2019394/Quiz_Student3.html">Quiz</a></li>  
+                <li><a href="#">Gallery</a></li>   	
+                <li><a href="../HTML_2019394/Team_Details_Student3.html">About Us</a></li> 
+                <li><a href="#">Site Map</a></li>
+                <li><a href="../HTML_2019407/Feedback_form_2019407.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <div id="content">
+    <h1 id="h1">Quiz Game</h1>
+    <div id="rules">
+        <h2>INSTRUCTIONS</h2>
+        <ul>
+            <li>Each correct answer will be given 02 marks.</li><br>
+            <li>Each wrong answer will be given -01 mark.</li><br>
+            <li>The QUIZ will be submitted automatically if you dont complete within the given time.<br> 
+                You will be given 02 minutes to complete the Quiz.</li><br>
+            <li>The summary sheet will be displayed at the end of the page.</li><br>
+            <table>
+                <tr>
+                    <td><div id="green1"></div> - If your answer is correct the corresponding answer turns Green.<br><br></td>
+                    <td><div id="green2"></div> - If you score above 10 points your summary sheet turns Green.<br><br></td>
+                </tr>
+                <tr>
+                    <td><div id="red1"></div> - If your answer is wrong the corresponding answer turns Red<br></td>
+                    <td><div id="red2"></div> - If you score less than 10 points your summary sheet turns Red.<br></td>
+                </tr>
+            </table>        
+
+        </ul>
+    </div>
+    
+    <form id="start" name="start">
+        <center><input type="button" id="Start" name="Start" value="Start Quiz" onclick = "Openform()";></center><br><br>
+    </form>
+
+    <div id = "displayquiz" style = "display:none">
+        <form id="quiz" name="quiz" action="">
+            <div id="showtimer"> </div><br><br>
+           
+            <div id="report">
+                <br>
+                <div id="ex" style="display: none;"><img src="../Images_2019394/ash bike 2.png" id="img2"></div>
+                <div id="ex2" style="display: none;"><img src="../Images_2019394/ash bike 3.png" id="img02"></div>
+                <div id="report_head"></div>
+                <a href="#end"><div id="score" name="score" style="display: none;">View Score</div></a>
+
+            <div class="Qorder">
+            Q1 : Which of these bikes have the highest engine capacity? <br>
+            <div id="Question"><br>
+                <input type="radio" id="q1,1" name="q1" value="right"><label for="q1,1">Triumph Rocket III</label> <br>
+                <input type="radio" id="q1,2" name="q1" value="wrong"><label for="q1,2">Ducati Streetfighter</label> <br>
+                <input type="radio" id="q1,3" name="q1" value="wrong"><label for="q1,3">Harley-Davidson CVO</label> <br>
+                <input type="radio" id="q1,4" name="q1" value="wrong"><label for="q1,4">Honda Goldwing</label> <br>
+                <div id="Q1" style="display: none;"></div><br>
+            </div></div>
+            
+            <div class="Qorder">
+            Q2 : What is the 1st fastest electical car produced in Sri Lanka? <br>
+            <div id="Question"><br>
+                <input type="radio" id="q2,1" name="q2" value="wrong"><label for="q2,1">Lamborghini</label> <br>
+                <input type="radio" id="q2,2" name="q2" value="wrong"><label for="q2,2">Nissan GTR</label> <br>
+                <input type="radio" id="q2,3" name="q2" value="right"><label for="q2,3">Vega </label> <br>
+                <input type="radio" id="q2,4" name="q2" value="wrong"><label for="q2,4">Ford Mustang</label> <br>
+                <div id="Q2" style="display: none;"></div><br>
+            </div></div>
+
+            <div class="Qorder">
+            Q3 : What racetrack is nicknamed 'The fastest Road in the West'?<br>
+            <div id="Question"><br>
+                <input type="radio" id="q3,1" name="q3" value="wrong"><label for="q3,1">Sears Point</label> <br>
+                <input type="radio" id="q3,2" name="q3" value="right"><label for="q3,2">Willow Springs</label> <br>
+                <input type="radio" id="q3,3" name="q3" value="wrong"><label for="q3,3">California Speedway</label> <br>
+                <input type="radio" id="q3,4" name="q3" value="wrong"><label for="q3,4">Phoneix International Raceway</label> <br>
+                <div id="Q3" style="display: none;"></div><br>
+            </div></div> 
+            
+            <div class="Qorder">
+            Q4 : How many rings are in the Audi logo? <br>
+            <div id="Question"><br>
+                <input type="radio" id="q4,1" name="q4" value="right"><label for="q4,1">Four</label> <br>
+                <input type="radio" id="q4,2" name="q4" value="wrong"><label for="q4,2">Three</label> <br>
+                <input type="radio" id="q4,3" name="q4" value="wrong"><label for="q4,3">Five</label> <br>
+                <input type="radio" id="q4,4" name="q4" value="wrong"><label for="q4,4">One</label> <br>
+                <div id="Q4" style="display: none;"></div><br>
+            </div></div>
+
+            <div class="Qorder">
+            Q5 : Who was the 1st lady to drive an aircraft? <br>
+            <div id="Question"><br>
+                <input type="radio" id="q5,1" name="q5" value="wrong"><label for="q5,1">Shawna Rochelle Kimbrell</label> <br>
+                <input type="radio" id="q5,2" name="q5" value="wrong"><label for="q5,2">Amy Johnson</label> <br>
+                <input type="radio" id="q5,3" name="q5" value="wrong"><label for="q5,3">Write Brothers</label> <br>
+                <input type="radio" id="q5,4" name="q5" value="right"><label for="q5,4">Amelia Earhart</label> <br>
+                <div id="Q5" style="display: none;"></div><br>
+            </div></div>
+
+            <div class="Qorder">
+            Q6 : Lexus is the luxury vehicle division of which Japanese car manufacturer?<br>
+            <div id="Question"><br>
+                <input type="radio" id="q6,1" name="q6" value="right"><label for="q6,1">Toyota</label> <br>
+                <input type="radio" id="q6,2" name="q6" value="wrong"><label for="q6,2">Honda</label> <br>
+                <input type="radio" id="q6,3" name="q6" value="wrong"><label for="q6,3">Subaru</label> <br>
+                <input type="radio" id="q6,4" name="q6" value="wrong"><label for="q6,4">Mazda</label> <br>
+                <div id="Q6" style="display: none;"></div><br>
+            </div></div>
+
+            <div class="Qorder">
+            Q7 : Why do ships float on water? <br>
+            <div id="Question"><br>
+                <input type="radio" id="q7,1" name="q7" value="wrong"><label for="q7,1">Upthrust created</label> <br>
+                <input type="radio" id="q7,2" name="q7" value="right"><label for="q7,2">Buoyancy force</label> <br>
+                <input type="radio" id="q7,3" name="q7" value="wrong"><label for="q7,3">Gravitational force</label> <br>
+                <input type="radio" id="q7,4" name="q7" value="wrong"><label for="q7,4">High weight of the ship</label> <br>
+                <div id="Q7" style="display: none;"></div><br>
+            </div></div>
+
+            <div class="Qorder">
+            Q8 : Which jeep that can stay a long time in water? <br>
+            <div id="Question"><br>
+                <input type="radio" id="q8,1" name="q8" value="wrong"><label for="q8,1">Range Rover</label> <br>
+                <input type="radio" id="q8,2" name="q8" value="wrong"><label for="q8,2">Land Rover</label> <br>
+                <input type="radio" id="q8,3" name="q8" value="wrong"><label for="q8,3">Mahindra</label> <br>
+                <input type="radio" id="q8,4" name="q8" value="right"><label for="q8,4">Jeep</label> <br>
+                <div id="Q8" style="display: none;"></div><br>
+            </div></div>
+
+            <div class="Qorder">
+            Q9 : Which car brand takes only 06 months to complete manufacturing? <br>
+            <div id="Question"><br>
+                <input type="radio" id="q9,1" name="q9" value="wrong"><label for="q9,1">Tesla</label> <br>
+                <input type="radio" id="q9,2" name="q9" value="right"><label for="q9,2">Rolls-Royce</label> <br>
+                <input type="radio" id="q9,3" name="q9" value="wrong"><label for="q9,3">Bentley</label> <br>
+                <input type="radio" id="q9,4" name="q9" value="wrong"><label for="q9,4">Bugatti</label> <br>
+                <div id="Q9" style="display: none;"></div><br>
+            </div></div>
+
+            <div class="Qorder">
+            Q10 : What is the nationality of Valentino Rossi?<br>
+            <div id="Question"><br>
+                <input type="radio" id="q10,1" name="q10" value="wrong"><label for="q10,1">Brazil</label> <br>
+                <input type="radio" id="q10,2" name="q10" value="wrong"><label for="q10,2">Spain</label> <br>
+                <input type="radio" id="q10,3" name="q10" value="right"><label for="q10,3">Italy</label> <br>
+                <input type="radio" id="q10,4" name="q10" value="wrong"><label for="q10,4">Japan</label> <br>
+                <div id="Q10" style="display: none;"></div><br>
+            </div></div> 
+
+            <a href="#"><input type="button" id="done" value="Submit" onclick="quiz1()"></a>
+    
+                <div id="end">
+                    <div id="total-marks"></div>
+                    <div id="time_remaining"></div>
+                </div>
+                <div id="emojicor" style = "display:none"><img src="../Images_2019394/emoji1.png" class="emo1"></div>
+                <div id="emojiwro" style = "display:none"><img src="../Images_2019394/tri2.png" class="emo2"></div>
+                
+                <center><input type="button" id="again" value="Play Again" onclick="rest()" style = "display:none"></center>
+            </div>
+        </form>
+            
+        <a href="#" title="Back to top"><img src="../Images_2019394/backtotop.png" id="b2t"></a>
+    </div>
+
+    <div id="footer12">        
+        <div id="link"><a href="../HTML_2019394/Page_Dev_Student3.html" title="Page Developer">
+            <img src="../Images_2019394/abt3.png" id="fimg"/><div id="pgd">Page Developer</div></a>
+            </div>
+    </div>
+    </div>
+
+    <script src="../JS_2019394/Quiz_Student3.js"></script>
+  
+</body>
+</html>

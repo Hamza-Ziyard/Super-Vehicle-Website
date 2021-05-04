@@ -1,0 +1,64 @@
+<html>
+  <head>
+        <title>Feeback form</title>
+        <link href="../CSS_2019407/feedbackform_2019407.css" rel="stylesheet" type="text/css">
+        <link href="../CSS_2019407/external_2019407.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="form"></div>
+        <div id="logo">
+            <a href="../Main_2019407.html"><img src="../images_2019407/car2.png" id="img"></a>
+        </div>
+        <div class="navigation_bar">
+            <nav>
+                <ul>   
+                    <li><a href="Main_2019407.html">Home</a></li> 
+                    <li><a href="../HTML_2019470/shopsite.html">Shop</a></li>  	
+                    <li><a href="../HTML_2019394/Quiz_Student3.html">Quiz</a></li>  
+                    <li><a href="#">Gallery</a></li>   	
+                    <li><a href="../HTML_2019394/Team_Details_Student3.html">About Us</a></li> 
+                    <li><a href="#">Site Map</a></li>
+                    <li><a href="Feedback_form_2019407.html">Feedback</a></li> 
+                </ul>
+            </nav>
+        </div>
+        
+        <form name="feedback" onsubmit="return displayDetails()" class="form_container">
+          <h1>Feedback</h1>
+    
+          <label for="name"><b>Enter your name :</b></label>
+            <input type="text" placeholder="Enter name" name="name">
+    
+          <label for="email"><b>Email Address :</b></label>
+            <input type="text" placeholder="Enter Email" name="email" >
+    
+          <label for="rating"><b>Your rating :<br></b></label>
+          <div class="rt_align">
+            <input type="radio" value="weak" name="rating">Weak<br>
+            <input type="radio" value="could improve" name="rating">Could Improve<br>
+            <input type="radio" value="moderate" name="rating">Moderate<br>
+            <input type="radio" value="good" name="rating">Good<br>
+            <input type="radio" value="extra-ordinary" name="rating">Extra Ordinary<br><br>
+          </div>
+    
+          <label for="comment"><b>Any Comments :</b></label>
+            <textarea rows="4" cols="25" name="comment" placeholder="Type your comments"></textarea>
+    
+          <button type="submit" class="submit" >Submit</button>
+          <button type="reset" class="clear">Clear Form</button>
+        </form>
+
+        <button type="submit" class="back" onclick=" previousPage()">Back</button>
+          <div id="footer12">        
+            <a href="Page_Developer_2019407.html" title="Page Developer">
+              <div id="link">
+                <img src="../images_2019407/abt3.png" id="fimg"/><div id="pgd">Page Developer</div>
+              </div>
+            </a>
+          </div>
+      </div>
+      <script src="../JS_2019407/feedbackform_2019407.js"></script>
+  </body>
+</html>
+

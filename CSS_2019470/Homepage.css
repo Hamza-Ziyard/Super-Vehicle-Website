@@ -1,0 +1,279 @@
+html{
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+ } 
+ 
+  body{
+     background-image: url("../Images_2019470/mainbg.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-size: 100% 100%;
+     position: sticky;
+     height: 100%;
+     margin:0;
+     top:7vw;
+     padding:0 0 0;
+     perspective: 1px;
+     transform-style: preserve-3d;
+     height: 100%;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     font-family: 'Saira', sans-serif;
+
+    
+ 
+ }
+ header{
+    box-sizing: border-box;
+    max-height: 99vh;
+    position:relative;
+    transform-style:inherit;
+    width:100vw;
+    letter-spacing: 1vw;
+    font-size: 8vw;
+    font-weight:bold;
+    color:rgba(247, 247, 247, 0.39);
+    margin-bottom: 0;
+    margin-top: 1vw;
+    padding-left: 1vw;
+    font-family: 'Tinos', serif;
+    
+     
+  
+  }
+
+  .heading{
+    padding: 4vw 0 0vw;
+    position:relative;
+    top:0vw;
+    font-size: 13vw;
+    color:rgba(240, 235, 235, 0.219);
+    text-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0vw;
+    
+   
+
+  }
+
+ .heading2{
+    position:relative;
+    top:0vw;
+    left: 1vw;
+    padding:0 0 0;
+    font-size: 6vw;
+    color:rgba(240, 235, 235, 0.568);
+    text-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left center;
+    text-transform: lowercase;
+  }
+  
+
+  header header:before{
+    background: 50% 50% / cover;
+  }
+  
+  header::before{
+     bottom: 0;
+     content:"";
+     left: 0;
+     position:absolute;
+     right:0;
+     top:7vw;
+     display:block;
+     background-image: url("../Images_2019470/bg4.jpg");
+     opacity:0.4;
+     background-size: 100% 100%;
+     transform-origin: center center 0;
+     transform:translateZ(-1px) scale(2);
+     z-index: -1;
+     min-height: 100vh;
+  
+  }
+
+
+.page-header{
+    position: fixed;
+    top: 0;
+    background-image: url("../Images_2019470/titlebg.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width:100%;
+    height: 5vw;
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+    overflow-y: clip;
+    overflow-x: hidden;
+    z-index:15;
+   
+    
+
+   
+}
+
+
+.page-header-title{
+    font-size:4vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0vw;
+    padding-left: 1vw;
+    color: white;
+    font-family: 'Tinos', serif;
+
+}
+
+.bgvideo{
+  margin-top: 7vw;
+  perspective:preserve 3d;
+}
+
+
+.main-content{
+  
+  position: relative;
+  top: 20%;
+  margin:0 0 50% 0;
+  left: 3%;
+  bottom: 5%;
+  width: 100%;
+  min-height: 100%;
+  
+  
+}
+
+.content-card{
+  width: 95%;
+  height: 100%;
+  margin-bottom: 5%;
+  background-color: black;
+  perspective:preserve 3d;
+
+
+}
+
+.jeep-name{
+  text-transform: capitalize;
+  font-size: 2vw ;
+  background-color: rgba(58, 58, 58, 0.699);
+  font-weight: bold;
+  font-family: 'Tinos', serif;
+  padding: 0.4vw;
+  margin-top: 0;
+}
+
+.jeep-image{
+  width:100%;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.details{
+  color: white;
+  font-size: 1.3vw;
+  letter-spacing: 0.08vw;
+  line-height: 1.9vw;
+  padding: 1vw 0 1vw 2vw;
+  font-family: 'Saira', sans-serif;
+  text-transform: capitalize;
+}
+
+
+
+.about-jeeps{
+  margin-top: 5vw;
+  margin-left:0;
+  background-color:white;
+  padding-bottom: 1vw;
+
+
+}
+
+.about-jeeps-title{
+  font-size:2vw;
+  margin-top: auto;
+  margin-bottom: 0;
+  padding:2vw;
+  font-family: 'Tinos', serif;
+  text-decoration: none;
+
+
+}
+
+.page-content{
+  margin-top: 0vw;
+  margin-left: 4.9vw;
+  margin-right:1vw ;
+  
+}
+
+.histroy-of-jeep{
+  margin-top: 0vw;
+  font-size:1vw;
+  letter-spacing: 0.05vw;
+  line-height:1.2;
+  padding:2vw;
+}
+
+.histroy-related-images-and-videos{
+  margin-left: 7vw;
+  margin-top:auto;
+  margin-bottom: 0;
+  
+}
+
+
+
+
+
+.footer{
+  display: flex;
+  margin-top:10%;
+  bottom: 0;
+  width:100%;
+  line-height:3vw;
+  font-size: 1.1vw;
+  color:white;
+  background-color: rgba(0, 0, 0, 0.863);
+  
+}
+
+.my-image{
+  margin-right: 5vw;
+}
+
+.contact-info a{
+  color:white;
+  margin-left: 1vw;
+  text-decoration: none;
+}
+
+.footer-text{
+  margin-left: 26%;
+  margin-top: 10vw;
+  font-size: 10vw;
+  color:rgba(240, 235, 235, 0.123);
+}
+
+
+  ::-webkit-scrollbar{
+      width:16px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+      background-color: rgba(128, 125, 125, 0.945);
+      border-radius: 10px;
+      perspective:preserve 3d;
+  }
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(255, 78, 8);
+
+}
+
+  ::-webkit-scrollbar-track{
+      background-color:transparent;
+  }

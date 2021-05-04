@@ -1,0 +1,123 @@
+body{
+    background-image: url('../Images_2019394/coder7.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: relative; 
+    background-size: 100% 100%;
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 50px;
+    margin-top: 40px;
+    font-family: 'Acme', sans-serif;
+}
+
+#photo{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 55px 0 20px 20px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+#pic{
+    border: solid black 1px;
+    height: 200px;
+    width: 198px;
+    margin: 0px 20px 20px 0px;
+    border-radius: 10px;
+}
+
+#details{
+    float: right;
+    width: 60%;
+    text-align: left;
+    font-size: 15px;
+}
+
+#main{
+    width: 660px;
+    height: 331px;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 10px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    
+}
+
+header{
+    top: 10px;
+    font-size: large;
+}
+
+tr{
+    height: 28px;
+}
+
+#r1{
+    font-weight: bold;
+}
+
+
+
+#social{
+    background-color: #2874A6;
+    text-align: center;
+    margin-top: 215px;
+    height: 34px;
+    clear: both;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#linkedin,#insta,#fb,#tel,#email{
+    padding: 5px 35px 0px 35px;
+    height: 25px;
+    width: 25px;
+    transition: 0.3s;
+}
+
+#linkedin:hover,#insta:hover,#fb:hover,#tel:hover,#email:hover{
+    transform: scale(0.8);
+}
+#link:hover{
+    transform: scale(0.95);
+}
+#link{
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    text-decoration-color: white;
+    clear: both;
+    margin: -465px 10px auto auto;
+    background-color: black;
+    padding-bottom: 5px;
+    width: 100px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+#fimg{
+	height: 30px;
+	width: 30px;
+	border-radius: 50px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover	{
+    color: blue;
+    text-decoration: none;
+}
+
+a:active{
+    color: red;
+}
